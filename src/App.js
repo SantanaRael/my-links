@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className='app'>
-      <img id='perfil' src='/icons/perfil.jpeg' alt='Perfil' />
+      <img id='perfil' src='https://raw.githubusercontent.com/SantanaRael/my-links/main/public/icons/perfil.jpeg' alt='Perfil' />
       <p>Israel Santana</p>
 
       {linksData.map((link) => (
