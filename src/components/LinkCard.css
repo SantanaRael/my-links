@@ -1,0 +1,70 @@
+.link-card {
+  padding: 10px;
+  margin: 20px;
+  width: 40vw;
+  background-color: #2d2d2d;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 6px 6px 12px #202020, -6px -6px 12px #3c3c3c;
+  box-shadow: 6px 6px 12px #202020, -6px -6px 12px #3c3c3c;
+}
+
+.link-card:hover {
+  transform: translate(0, -5px);
+}
+
+.link-card a {
+  text-decoration: none;
+  color: aliceblue;
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: start;
+  margin-left: 80px;
+  align-self: center; 
+  
+}
+
+.link-card img {
+  width: 30px;
+  height: 30px;
+  grid-area: 1 / 1 / 2 / 2;
+  margin-left: 40px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .link-card {
+    width: 60vw; 
+  }
+
+  .link-card a {
+    margin-left: -20px; 
+    text-align: center;
+
+  }
+
+  .link-card img {
+    margin-left: 10px; 
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .link-card{
+    height: 40px;
+  }
+
+  .link-card a {
+    text-align: left;
+    margin-left: 20px;
+    max-width: 170px;
+    overflow-wrap: break-word; 
+  }
+
+}
+
