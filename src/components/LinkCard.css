@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 960px) {
   .link-card {
-    width: 60vw; 
+    width: 70vw; 
   }
 
   .link-card a {
@@ -57,6 +57,21 @@
 
   .link-card{
     height: 40px;
+  }
+
+  .link-card a {
+    text-align: left;
+    margin-left: 20px;
+    max-width: 170px;
+    overflow-wrap: break-word; 
+  }
+
+}
+
+@media screen and (max-width: 245px) {
+
+  .link-card{
+    height: 70px;
   }
 
   .link-card a {
