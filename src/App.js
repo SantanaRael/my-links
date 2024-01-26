@@ -36,11 +36,11 @@ function getLinkWithConditionalName(link, width) {
     if (link.name === 'Acesse meu perfil no linkedin') {
       return { ...link, name: 'Meu perfil no LinkedIn' };
     } else if (link.name === 'Veja meus repositorios no github') {
-      return { ...link, name: 'Repositórios no GitHub' };
+      return { ...link, name: 'Explore meu GitHub' };
     } else if (link.name === 'Faça download do meu curriculo') {
-      return { ...link, name: 'Download do meu currículo' };
+      return { ...link, name: 'Baixe meu currículo' };
     } else if (link.name === 'Entre em contato comigo via e-mail') {
-      return { ...link, name: 'Contato comigo via e-mail' };
+      return { ...link, name: 'Entre em Contato' };
     }
   }
 
