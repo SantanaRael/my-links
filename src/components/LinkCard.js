@@ -8,7 +8,7 @@ function LinkCard({ link }) {
 
   return (
     <div className="link-card" onClick={redirectToLink}>
-      <img src={process.env.PUBLIC_URL + link.icon} alt={link.name} />
+      <span>{link.icon}</span>
       <a href={link.url} target="_blank" rel="noopener noreferrer">
         {link.name}
       </a>

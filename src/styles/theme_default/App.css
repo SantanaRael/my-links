@@ -72,11 +72,12 @@ body{
   
 }
 
-.link-card img {
-  width: 30px;
-  height: 30px;
+.link-card span i {
+  font-size: 30px;
   grid-area: 1 / 1 / 2 / 2;
-  margin-left: 40px;
+  border-left: 40px;
+  color:#0344f8;
+
 }
 
 
@@ -91,8 +92,8 @@ body{
 
   }
 
-  .link-card img {
-    margin-left: 10px; 
+  .link-card span i {
+    border-left: 10px; 
   }
 }
 
@@ -136,8 +137,8 @@ body{
     overflow-wrap: break-word; 
   }
 
-  .link-card img {
-    margin-top: 15px;
+  .link-card span i {
+    border-top: 15px;
   }
 
 }
