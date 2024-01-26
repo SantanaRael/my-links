@@ -1,5 +1,5 @@
 import React from 'react';
-import './LinkCard.css';
+import '../styles/theme_default/App.css';
 
 function LinkCard({ link }) {
   const redirectToLink = () => {

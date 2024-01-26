@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LinkCard from './components/LinkCard';
-import linksData from './interfaces/linkData';
-import './App.css';
+import { links, linksData } from './interfaces/linkData';
+import './styles/theme_default/App.css';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

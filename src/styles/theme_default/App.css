@@ -1,3 +1,43 @@
+body{
+  background-color: #202020;
+}
+
+
+.app {
+  display: grid;
+  justify-content: center;
+  margin: 0; 
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+
+#perfil {
+  border-radius: 10px;
+  width: 70px;
+  display: block;
+  margin: 0 auto; /* Define as margens esquerda e direita como 'auto' para centralizar horizontalmente */
+}
+
+.app p{
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 50px;
+
+}
+
+
+
+.app p:last-of-type {
+  color: #2f2f2f;
+  font-size: 12px;
+  margin-top: 30px;
+
+}
+
+
 .link-card {
   padding: 10px;
   margin: 20px;
