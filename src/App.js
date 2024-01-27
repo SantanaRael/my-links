@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import LinkCard from './components/LinkCard';
 import { linksData } from './interfaces/linkData';
-import './styles/theme_default/App.css';
-import Theme from './components/Theme';
 import Menu from './components/Menu';
-
+import './styles/themes/App.default.css';
+import './styles/themes/App.white.css';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [menuVisible, setMenuVisible] = useState(false);
+  const { menuVisible, toggleMenu } = Menu(); // Importar a função toggleMenu do Menu
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,15 +29,30 @@ function App() {
     </svg>
   );
 
-  const handleToggleMenu = () => {
-    setMenuVisible(!menuVisible);
+
+  const [currentTheme, setTheme] = useState('default');
+
+  const setWhiteTheme = () => {
+    setTheme("white");
+    toggleMenu();
   };
 
+  const setDefaultTheme = () => {
+    setTheme("default");
+    toggleMenu();
+  };
 
   return (
-    <div className='app'>
-      <i id="theme" className='bx bxs-color-fill' onClick={handleToggleMenu}></i>
-       {menuVisible && <Theme />}
+    <div className={`app-${currentTheme}`}>
+      <i id="theme" className='bx bxs-color-fill' onClick={toggleMenu}></i>
+       {menuVisible && 
+           <div className='menu-theme'>
+           <ul>
+             <li>Temas</li>
+             <li onClick={setDefaultTheme}>Padrão</li>
+             <li onClick={setWhiteTheme}>Claro</li>
+           </ul>
+         </div>}
       <div id="perfil"><MySvg /></div>
       <p>Israel Santana</p>
 

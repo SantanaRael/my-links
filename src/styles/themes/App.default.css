@@ -1,19 +1,23 @@
 body{
-  background-color: #202020;
+  margin: 0;
+  padding: 0;
 }
 
-
-.app {
+.app-default {
   display: grid;
   justify-content: center;
   margin: 0; 
   text-align: center;
-  margin-top: 40px;
+  background-color: #202020;
+  height: calc(100vh - 40px - 500px);
+  width: calc(100vw );
+  padding-top: 40px;
+  padding-bottom: 500px;
 
 }
 
 
-#perfil {
+.app-default #perfil {
   border-radius: 10px;
   width: 70px;
   height: 70px;
@@ -28,11 +32,11 @@ body{
   top: 10px;
 }
 
-#svg:first-child{
+.app-default #svg:first-child{
   fill: #0344f8;
 }
 
-.app p{
+.app-default p{
   color: white;
   font-weight: 600;
   font-size: 17px;
@@ -40,7 +44,7 @@ body{
 
 }
 
-#theme{
+.app-default .bxs-color-fill{
   color: rgba(255, 255, 255, 0.322);
   position: absolute;
   right: 20px;
@@ -49,7 +53,7 @@ body{
 
 }
 
-#theme:hover{
+.app-default #theme:hover{
   color: rgb(255, 255, 255);
   cursor: pointer;
   
@@ -57,7 +61,7 @@ body{
 }
 
 
-.app p:last-of-type {
+.app-default p:last-of-type {
   color: #2f2f2f;
   font-size: 12px;
   margin-top: 30px;
@@ -65,10 +69,11 @@ body{
 }
 
 
-.link-card {
+.app-default .link-card {
   padding: 10px;
   margin: 20px;
   width: 40vw;
+  height: 40px;
   background-color: #2d2d2d;
   display: grid;
   cursor: pointer;
@@ -83,11 +88,11 @@ body{
   box-shadow: 6px 6px 12px #202020, -6px -6px 12px #3c3c3c;
 }
 
-.link-card:hover {
+.app-default .link-card:hover {
   transform: translate(0, -5px);
 }
 
-.link-card a {
+.app-default .link-card a {
   text-decoration: none;
   color: aliceblue;
   grid-area: 1 / 2 / 2 / 3;
@@ -99,7 +104,7 @@ body{
   
 }
 
-.link-card span i {
+.app-default .link-card span i {
   font-size: 30px;
   grid-area: 1 / 1 / 2 / 2;
   border-left: 40px;
@@ -107,10 +112,10 @@ body{
 
 }
 
-.menu-theme {
+.app-default .menu-theme {
   width: 150px;
   background-color: #3c3c3c;
-  height: 70px;
+  height: auto;
   position: absolute;
   right: 20px;
   top: 60px;
@@ -118,7 +123,7 @@ body{
   color: white;
 }
 
-.menu-theme::after {
+.app-default .menu-theme::after {
   content: '';
   width: 20px;
   background-color: #3c3c3c;
@@ -130,15 +135,22 @@ body{
 
 }
 
-.menu-theme ul {
+.app-default .menu-theme ul {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.menu-theme ul li {
-  width: 150px;
+.app-default .menu-theme ul li:first-child {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+
+}
+
+.app-default .menu-theme ul li {
+  width: 136px;
   height: 50%;
   border-bottom: 1px solid #202020;
   position: relative;
@@ -146,38 +158,54 @@ body{
   display: grid;       
   align-items: center; 
   cursor: pointer;
+  padding: 7px;
+  color: rgb(194, 194, 194);
+  font-size: 15px;
+
+}
+
+.app-default .menu-theme ul li:hover {
+  color: white;
 }
 
 
 
 @media screen and (max-width: 960px) {
-  .link-card {
+  .app-default .link-card {
     width: 80vw; 
   }
 
-  .link-card a {
+  .app-default .link-card a {
     margin-left: -20px; 
     text-align: center;
 
   }
 
-  .link-card span i {
+  .app-default .link-card span i {
     border-left: 10px; 
   }
 }
 
 @media screen and (max-width: 460px) {
 
-  .link-card{
+  .app-default .link-card{
     height: 40px;
   }
 
-  .link-card a {
+  .app-default .link-card a {
     text-align: left;
     margin-left: 20px;
     max-width: 170px;
     overflow-wrap: break-word; 
   }
+
+  .app-default .app-default {
+    
+    height: calc(100vh - 400px);
+
+  
+  }
+  
 
 }
 
@@ -185,7 +213,7 @@ body{
 
   
 
-  .link-card a {
+  .app-default .link-card a {
     min-width: 100px;
 
   }
@@ -195,18 +223,18 @@ body{
 
 @media screen and (max-width: 245px) {
 
-  .link-card{
+  .app-default .link-card{
     height: 70px;
   }
 
-  .link-card a {
+  .app-default .link-card a {
     text-align: left;
     margin-left: 20px;
     max-width: 170px;
     overflow-wrap: break-word; 
   }
 
-  .link-card span i {
+  .app-default .link-card span i {
     border-top: 15px;
   }
 
