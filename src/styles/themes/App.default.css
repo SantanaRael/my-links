@@ -44,13 +44,27 @@ body{
 
 }
 
-.app-default .bxs-color-fill{
+.app-default .bx-brush{
   color: rgba(255, 255, 255, 0.322);
   position: absolute;
   right: 20px;
   top: 20px;
   font-size: 25px;
 
+}
+
+.app-default .bx-brush::after{
+  content: 'Temas';
+  color: #969696;
+  font-size: 15px !important;
+  position: absolute;
+  right: -5px;
+  top: 23px;
+  font-size: 25px;
+}
+
+.app-default .bx-brush:hover::after{
+  color: #ffffff;
 }
 
 .app-default #theme:hover{
@@ -118,7 +132,7 @@ body{
   height: auto;
   position: absolute;
   right: 20px;
-  top: 60px;
+  top: 70px;
   border-radius: 7px;
   color: white;
 }

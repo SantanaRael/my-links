@@ -43,7 +43,7 @@ body{
 
 }
 
-.app-white .bxs-color-fill{
+.app-white .bx-brush{
   color: #969696;
   position: absolute;
   right: 20px;
@@ -51,6 +51,19 @@ body{
   font-size: 25px;
 }
 
+.app-white .bx-brush::after{
+  content: 'Temas';
+  color: #969696;
+  font-size: 15px !important;
+  position: absolute;
+  right: -5px;
+  top: 23px;
+  font-size: 25px;
+}
+
+.app-white .bx-brush:hover::after{
+  color: #000000;
+}
 
 
 .app-white #theme:hover{
@@ -117,7 +130,7 @@ body{
   height: auto;
   position: absolute;
   right: 20px;
-  top: 60px;
+  top: 70px;
   border-radius: 7px;
   color: rgb(0, 0, 0);
 }

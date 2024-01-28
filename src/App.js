@@ -7,6 +7,8 @@ import Menu from './components/Menu'
 import SVG from './components/Svg';
 import './styles/themes/App.default.css';
 import './styles/themes/App.white.css';
+import './styles/themes/App.neon.css';
+
 
 
 function App() {
@@ -24,10 +26,15 @@ function App() {
     toggleMenu();
   };
 
+  const setNeonTheme = () => {
+    setTheme("neon");
+    toggleMenu();
+  };
+
   return (
     <div className={`app-${currentTheme}`}>
-      <i id="theme" className='bx bxs-color-fill' onClick={toggleMenu}></i>
-      <Theme menuVisible={menuVisible} setDefaultTheme={setDefaultTheme} setWhiteTheme={setWhiteTheme} />
+      <i id="theme" className='bx bx-brush' onClick={toggleMenu}></i>
+      <Theme menuVisible={menuVisible} setDefaultTheme={setDefaultTheme} setWhiteTheme={setWhiteTheme} setNeonTheme={setNeonTheme} />
       <div id="perfil"><SVG /></div>
       <p>Israel Santana</p>
       {linksData.map((link) => (

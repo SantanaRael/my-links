@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-neon {
+    display: grid;
+    justify-content: center;
+    margin: 0; 
+    text-align: center;
+    background-color: #181A45;
+    height: calc(100vh - 40px - 500px);
+    width: calc(100vw );
+    padding-top: 40px;
+    padding-bottom: 500px;
+  
+  }
+  
+  
+  .app-neon #perfil {
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 0.125em; /* Ajuste o tamanho do border conforme necessário */
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #181A45, #E842FF);
+    border-image: linear-gradient(to bottom, #51D9FF, #E842FF) 1px; /* 1 significa que o tamanho da borda é o mesmo da largura/altura do elemento */
+  }
+  
+  #svg{
+    position: relative;
+    top: 15px;
+  }
+  
+  .app-neon #svg:first-child{
+    fill: #c2c2c2;
+  }
+  
+  .app-neon p{
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  }
+  
+  .app-neon .bx-brush{
+    color: #565aa1;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+  }
+  .app-neon .bx-brush::after{
+    content: 'Temas';
+    color: #565aa1;
+    font-size: 15px !important;
+    position: absolute;
+    right: -5px;
+    top: 23px;
+    font-size: 25px;
+  }
+
+  .app-neon .bx-brush:hover::after{
+    color: #ffffff;
+  }
+  
+  .app-neon #theme:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+  
+  }
+  
+  
+  .app-neon p:last-of-type {
+    color: #565aa1;
+    font-size: 12px;
+    margin-top: 30px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  }
+  
+  
+  .app-neon .link-card {
+    padding: 10px;
+    margin: 20px;
+    width: 40vw;
+    height: 40px;
+    background-color: #181A45;
+    border: #E842FF 0.125em solid;
+
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 10px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 #E842FF, 0 0 0.5em 0 #E842FF;
+  }
+
+
+  
+
+
+  .app-neon .link-card:nth-child(6), .app-neon .link-card:nth-child(4) {
+    box-shadow: inset 0 0 0.5em 0 #51D9FF, 0 0 0.5em 0 #51D9FF;
+    background-color: #181A45;
+    border: #51D9FF 0.125em solid;
+
+  }
+
+  .app-neon .link-card:nth-child(6)::after, .app-neon .link-card:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em #51D9FF;
+    opacity: 0;
+    background-color: #51D9FF;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .app-neon .link-card:hover {
+    transform: translate(0, -5px);
+    background-color: #181A45;
+    text-shadow: none;
+  }
+
+  .app-neon .link-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em #E842FF;
+    opacity: 0;
+    background-color: #E842FF;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+
+
+  .app-neon .link-card:hover,
+  .app-neon .link-card:focus {
+    color: #181A45;
+    text-shadow: none;
+  }
+
+  .app-neon .link-card:hover::before,
+  .app-neon .link-card:focus::before {
+    opacity: 1;
+  }
+
+  .app-neon .link-card:hover::after,
+  .app-neon .link-card:focus::after {
+    opacity: 1;
+  }
+  
+  .app-neon .link-card a {
+    text-decoration: none;
+    color: aliceblue;
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: start;
+    margin-left: 80px;
+    align-self: center; 
+    min-width: 180px;
+  
+    
+  }
+  
+  .app-neon .link-card span i {
+    font-size: 30px;
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 40px;
+    color:#E842FF;
+  
+  }
+
+  .app-neon .link-card:hover span i {
+    color:#181A45;
+  
+  }
+  
+  .app-neon .menu-theme {
+    width: 150px;
+    background-color: #373a70;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    border-radius: 7px;
+    color: white;
+  }
+  
+  .app-neon .menu-theme::after {
+    content: '';
+    width: 20px;
+    background-color: #373a70;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -5px;
+    right: 5px;
+  
+  }
+  
+  .app-neon .menu-theme ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-neon .menu-theme ul li:first-child {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+  
+  }
+
+  .app-neon .menu-theme ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .app-neon .menu-theme ul li {
+    width: 136px;
+    height: 50%;
+    border-bottom: 1px solid #E842FF;
+    position: relative;
+    list-style: none;
+    display: grid;       
+    align-items: center; 
+    cursor: pointer;
+    padding: 7px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+  
+  }
+  
+  .app-neon .menu-theme ul li:hover {
+    color: white;
+  }
+  
+  
+  
+  @media screen and (max-width: 960px) {
+    .app-neon .link-card {
+      width: 80vw; 
+    }
+  
+    .app-neon .link-card a {
+      margin-left: -20px; 
+      text-align: center;
+  
+    }
+  
+    .app-neon .link-card span i {
+      border-left: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+  
+    .app-neon .link-card{
+      height: 40px;
+    }
+  
+    .app-neon .link-card a {
+      text-align: left;
+      margin-left: 20px;
+      max-width: 170px;
+      overflow-wrap: break-word; 
+    }
+  
+    .app-neon .app-neon {
+      
+      height: calc(100vh - 400px);
+  
+    
+    }
+    
+  
+  }
+  
+  @media screen and (max-width: 293px) {
+  
+    
+  
+    .app-default .link-card a {
+      min-width: 100px;
+  
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 245px) {
+  
+    .app-default .link-card{
+      height: 70px;
+    }
+  
+    .app-default .link-card a {
+      text-align: left;
+      margin-left: 20px;
+      max-width: 170px;
+      overflow-wrap: break-word; 
+    }
+  
+    .app-default .link-card span i {
+      border-top: 15px;
+    }
+  
+  }
+  
+  
