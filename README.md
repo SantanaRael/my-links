@@ -14,13 +14,17 @@ Bem-vindo ao repositório do projeto My Links! Este é um aplicativo desenvolvid
 - **React:** Construído utilizando a popular biblioteca JavaScript para criação de interfaces de usuário.
 - **GHPages:** Utilizado para implantação fácil nas GitHub Pages.
 
-## Demonstração
+## Temas
 
 Você pode visualizar uma demonstração projeto abaixo: 
 
 https://santanarael.github.io/my-links/
 
-![image](https://github.com/SantanaRael/my-links/assets/73674173/c7f93a2d-791d-4e3c-b23e-e2ad78d2e718)
+<div style="display: flex;">
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/e8a089a8-d70a-4695-aa80-784ae2840923" style="width: 30%; margin-right: 50px;" />
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/afe7820b-3225-45a7-988c-53c9cfcce7f9" style="width: 30%; margin-right: 50px;" />
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/bae0b1e1-12fb-4a69-a645-f7e078e78337" style="width: 30%; margin-right: 50px;" />
+</div>
 
 
 ## Como Fazer atualizações
