@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Theme({ menuVisible, setDefaultTheme, setWhiteTheme, setNeonTheme }) {
+function Theme({ menuVisible, setDefaultTheme, setWhiteTheme, setNeonTheme, setBlurTheme}) {
   return (
     <>
       {menuVisible && 
@@ -10,6 +10,8 @@ function Theme({ menuVisible, setDefaultTheme, setWhiteTheme, setNeonTheme }) {
             <li onClick={setDefaultTheme}>Padrão</li>
             <li onClick={setWhiteTheme}>Claro</li>
             <li onClick={setNeonTheme}>Neon</li>
+            <li onClick={setBlurTheme}>Blur</li>
+
           </ul>
         </div>
       }

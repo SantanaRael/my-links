@@ -1,0 +1,374 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-blur {
+    display: grid;
+    justify-content: center;
+    margin: 0; 
+    text-align: center;
+    background-color: #ffd37a59;
+
+    height: calc(100vh - 40px - 500px);
+    width: calc(100vw );
+    padding-top: 40px;
+    padding-bottom: 500px;
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  
+  }
+
+
+   #root::before {
+    content: ''; 
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #F5ADC1;
+    z-index: -1;
+    width: 200px; 
+    height: 200px; 
+    top: 50%; 
+    left: 65%;
+    }
+
+    #root::after {
+        content: ''; 
+        position: absolute;
+        border-radius: 50%; 
+        background-color: #21755E;
+        z-index: -1;
+        width: 100px; 
+        height: 100px; 
+        top: 40%;
+        left: 60%;
+    }
+
+    #style::after{
+        content: ''; 
+        position: absolute;
+        border-radius: 50%; 
+        background-color: #D66C48;
+        z-index: -1;
+        width: 300px; 
+        height: 300px; 
+        top: 30%;
+        left: 20%;
+    }
+
+    #style::before{
+        content: ''; 
+        position: absolute;
+        border-radius: 50%; 
+        background-color: #ffd000;
+        z-index: -1;
+        width: 150px; 
+        height: 150px; 
+        top: 70%;
+        left: 30%;
+    }
+  
+  
+  
+  .app-blur #perfil {
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    background-color: #08070559;
+    overflow: hidden;
+  }
+  
+  #svg{
+    position: relative;
+    top: 10px;
+  }
+  
+  .app-blur #svg:first-child{
+    fill: white;
+  }
+  
+  .app-blur p{
+    color: #202020;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .app-blur .bx-brush{
+    color: #202020;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+  
+  }
+  
+  .app-blur .bx-brush::after{
+    content: 'Temas';
+    color: #202020;
+    font-size: 15px !important;
+    position: absolute;
+    right: -5px;
+    top: 23px;
+    font-size: 25px;
+  }
+  
+  .app-blur .bx-brush:hover::after{
+    color: #474747;
+  }
+  
+  .app-blur #theme:hover{
+    color: #4e4e4e;
+    cursor: pointer;
+    
+  
+  }
+  
+  
+  .app-blur p:last-of-type {
+    color: #2f2f2f;
+    font-size: 12px;
+    margin-top: 30px;
+  
+  }
+  
+  
+  .app-blur .link-card {
+    padding: 10px;
+    margin: 20px;
+    width: 40vw;
+    height: 40px;
+
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(7, 7, 7, 0.486);
+    border: 1px solid rgb(255, 255, 255);
+
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .app-blur .link-card:hover {
+    transform: translate(0, -5px);
+  }
+  
+  .app-blur .link-card a {
+    text-decoration: none;
+    color: aliceblue;
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: start;
+    margin-left: 80px;
+    align-self: center; 
+    min-width: 180px;
+  
+    
+  }
+  
+  .app-blur .link-card span i {
+    font-size: 30px;
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 40px;
+    color:white;
+  
+  }
+  
+  .app-blur .menu-theme {
+    width: 150px;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(7, 7, 7, 0.486);
+    border: 1px solid rgb(255, 255, 255);
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    border-radius: 7px;
+    color: white;
+  }
+  
+
+  
+  .app-blur .menu-theme ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-blur .menu-theme ul li:first-child {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+  
+  }
+  
+  .app-blur .menu-theme ul li {
+    width: 136px;
+    height: 50%;
+    border-bottom: 1px solid #202020;
+    position: relative;
+    list-style: none;
+    display: grid;       
+    align-items: center; 
+    cursor: pointer;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  
+  }
+  
+  .app-blur .menu-theme ul li:hover {
+    color: white;
+  }
+
+  .app-blur .menu-theme ul li:last-child {
+    border-bottom: none;
+    }
+  
+  
+  
+  @media screen and (max-width: 960px) {
+    .app-blur .link-card {
+      width: 80vw; 
+    }
+  
+    .app-blur .link-card a {
+      margin-left: -20px; 
+      text-align: center;
+  
+    }
+  
+    .app-blur .link-card span i {
+      border-left: 10px; 
+    }
+  }
+
+
+  @media screen and (max-width:608px){
+
+
+    #root::before {
+        content: ''; 
+        position: absolute;
+        border-radius: 50%; 
+        background-color: #F5ADC1;
+        z-index: -1;
+        width: 100px; 
+        height: 100px; 
+        top: 50%; 
+        left: 65%;
+        }
+    
+        #root::after {
+            content: ''; 
+            position: absolute;
+            border-radius: 50%; 
+            background-color: #21755E;
+            z-index: -1;
+            width: 100px; 
+            height: 100px; 
+            top: 30%;
+            left: 55%;
+        }
+    
+        #style::after{
+            content: ''; 
+            position: absolute;
+            border-radius: 50%; 
+            background-color: #D66C48;
+            z-index: -1;
+            width: 200px; 
+            height: 200px; 
+            top: 30%;
+            left: -15%;
+        }
+    
+        #style::before{
+            content: ''; 
+            position: absolute;
+            border-radius: 50%; 
+            background-color: #ffd000;
+            z-index: -1;
+            width: 150px; 
+            height: 150px; 
+            top: 60%;
+            left: 30%;
+        }
+  }
+  
+  @media screen and (max-width: 460px) {
+  
+    .app-blur .link-card{
+      height: 40px;
+    }
+  
+    .app-blur .link-card a {
+      text-align: left;
+      margin-left: 20px;
+      max-width: 170px;
+      overflow-wrap: break-word; 
+    }
+  
+    .app-blur .app-blur {
+      
+      height: calc(100vh - 400px);
+  
+    
+    }
+    
+  
+  }
+  
+  @media screen and (max-width: 293px) {
+  
+    #root::before {
+        content: ''; 
+        position: absolute;
+        border-radius: 50%; 
+        background-color: #F5ADC1;
+        z-index: -1;
+        width: 100px; 
+        height: 100px; 
+        top: 50%; 
+        left: 55%;
+        }
+  
+    .app-blur .link-card a {
+      min-width: 100px;
+  
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 245px) {
+  
+    .app-blur .link-card{
+      height: 70px;
+    }
+  
+    .app-blur .link-card a {
+      text-align: left;
+      margin-left: 20px;
+      max-width: 170px;
+      overflow-wrap: break-word; 
+    }
+  
+    .app-blur .link-card span i {
+      border-top: 15px;
+    }
+  
+  }
+  
+  

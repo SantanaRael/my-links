@@ -8,7 +8,7 @@ import SVG from './components/Svg';
 import './styles/themes/App.default.css';
 import './styles/themes/App.white.css';
 import './styles/themes/App.neon.css';
-
+import './styles/themes/App.blur.css';
 
 
 function App() {
@@ -31,10 +31,16 @@ function App() {
     toggleMenu();
   };
 
+
+  const setBlurTheme = () => {
+    setTheme("blur");
+    toggleMenu();
+  };
+
   return (
     <div className={`app-${currentTheme}`}>
       <i id="theme" className='bx bx-brush' onClick={toggleMenu}></i>
-      <Theme menuVisible={menuVisible} setDefaultTheme={setDefaultTheme} setWhiteTheme={setWhiteTheme} setNeonTheme={setNeonTheme} />
+      <Theme menuVisible={menuVisible} setDefaultTheme={setDefaultTheme} setWhiteTheme={setWhiteTheme} setNeonTheme={setNeonTheme} setBlurTheme={setBlurTheme}/>
       <div id="perfil"><SVG /></div>
       <p>Israel Santana</p>
       {linksData.map((link) => (
