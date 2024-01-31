@@ -20,10 +20,11 @@ Você pode visualizar uma demonstração projeto abaixo:
 
 https://santanarael.github.io/my-links/
 
-<div style="display: flex;">
-  <img src="https://github.com/SantanaRael/my-links/assets/73674173/e8a089a8-d70a-4695-aa80-784ae2840923" style="width: 30%; margin-right: 50px;" />
-  <img src="https://github.com/SantanaRael/my-links/assets/73674173/afe7820b-3225-45a7-988c-53c9cfcce7f9" style="width: 30%; margin-right: 50px;" />
-  <img src="https://github.com/SantanaRael/my-links/assets/73674173/bae0b1e1-12fb-4a69-a645-f7e078e78337" style="width: 30%; margin-right: 50px;" />
+<div style="display: grid;">
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/e8a089a8-d70a-4695-aa80-784ae2840923" style="width: 20%;" />
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/afe7820b-3225-45a7-988c-53c9cfcce7f9" style="width: 20%;" />
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/bae0b1e1-12fb-4a69-a645-f7e078e78337" style="width: 20%;" />
+  <img src="https://github.com/SantanaRael/my-links/assets/73674173/803ba323-cfc6-49e3-a20a-af8efc45dd36" style="width: 20%;" />
 </div>
 
 
